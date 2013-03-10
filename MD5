@@ -1,0 +1,9 @@
+269efd63015331670f886e72b6481f64 *DESCRIPTION
+f35991a8f622053178e39e767dd5752a *NAMESPACE
+ccdbb5d69477d5ccd6554af1b29f5a3b *R/FuzzyStatProb-package.R
+a019ee98763fa2c9aaf28c4cfdc19280 *R/fuzzyStatObj.R
+d20bd3c5f0927ef8773c5a8d9d6035d7 *R/initial-pop.R
+cab2c8234f921065ff2313b38865c00c *R/main.R
+ad7edf829847eb6c533385de916dc304 *R/memb-fn-reg.R
+fae5a4604216522c98c0b04f63b3fe47 *R/objective-fn.R
+e0f0a479a766c6d44d51a91e1999d3f4 *man/FuzzyStatProb.Rd
