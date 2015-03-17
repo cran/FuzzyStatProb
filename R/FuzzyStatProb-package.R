@@ -11,5 +11,5 @@
 
 .onAttach <- function(lib, pkg)
 {
-   packageStartupMessage("FuzzyStatProb loaded\nAuthor: Pablo J. Villacorta, Univ. of Granada (Spain) - pjvi@decsai.ugr.es");
+   packageStartupMessage("FuzzyStatProb by Pablo J. Villacorta, Univ. of Granada (Spain) - pjvi@decsai.ugr.es");
 }

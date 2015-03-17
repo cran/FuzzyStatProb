@@ -1,1 +1,4 @@
-exportPattern("^[^\\.]")
+import(parallel, MultinomialCI, DEoptim, FuzzyNumbers)
+export(fuzzyStationaryProb)
+S3method(print, FuzzyStatObj)
+S3method(summary, FuzzyStatObj)

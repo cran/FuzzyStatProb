@@ -6,6 +6,7 @@
   temp
 }
 .stationary = function(x,d,listaposx,listaposy,component,lowerboundsmatrix,upperboundsmatrix,maximize){
+
   P<-matrix(0,d,d);
   acum=0;
   indicex=1;
@@ -29,12 +30,10 @@
       indicex = indicex + 1;
     }
   }
-  
   # ------------------------------------------------------------------------
   #  Computation of stationary probabilities with crisp transition matrix P
   # ------------------------------------------------------------------------
-  identidad<-matrix(0,d,d);
-  diag(identidad)<-1;
+  identidad<-diag(d);
   ceros<-matrix(0,d,d);
   mat2=.unos(ceros) %*% solve(.unos(P-identidad));
   vec=mat2[1,];  # Now vec contains the stationary distribution

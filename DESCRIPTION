@@ -1,26 +1,21 @@
 Package: FuzzyStatProb
 License: LGPL (>= 3)
+Author: Author: Pablo J. Villacorta <pjvi@decsai.ugr.es>
 Maintainer: Pablo J. Villacorta <pjvi@decsai.ugr.es>
-BugReports: http://decsai.ugr.es/~pjvi
-LazyData: false
-Title: Fuzzy stationary probabilities from a sequence of observations
-        of an unknown Markov chain
+URL: http://decsai.ugr.es/~pjvi/r-packages.html
+LazyData: true
+Title: Fuzzy Stationary Probabilities from a Sequence of Observations
+        of an Unknown Markov Chain
 Type: Package
-Author: Pablo J. Villacorta <pjvi@decsai.ugr.es>
-Description: An implementation of a method for computing fuzzy numbers
-        representing stationary probabilities of an unknown Markov
-        chain, from which a sequence of observations along time has
-        been obtained. The algorithm is based on the proposal presented
-        by James Buckley in his book on Fuzzy probabilities (Springer,
-        2005), chapter 6. Package FuzzyNumbers is used to represent the
-        output probabilities.
-Version: 1.0
-URL: http://decsai.ugr.es/~pjvi
-Date: 2013-3-10
-Depends: R (>= 2.15.0), MultinomialCI, parallel, FuzzyNumbers, DEoptim
-Collate: 'fuzzyStatObj.R' 'FuzzyStatProb-package.R' 'initial-pop.R'
-        'main.R' 'memb-fn-reg.R' 'objective-fn.R'
-Packaged: 2013-03-11 01:10:59 UTC; Pablo
+Description: An implementation of a method for computing fuzzy numbers representing stationary probabilities of an unknown Markov chain,
+        from which a sequence of observations along time has been obtained. The algorithm is based on the proposal presented by James Buckley 
+        in his book on Fuzzy probabilities (Springer, 2005), chapter 6. Package FuzzyNumbers is used to represent the output probabilities.
+Version: 2.0
+Date: 2015-3-17
+Imports: MultinomialCI, parallel, FuzzyNumbers, DEoptim
+Suggests: markovchain, R.rsp
+VignetteBuilder: R.rsp
+Packaged: 2015-03-18 05:32:15 UTC; Pablo
 NeedsCompilation: no
 Repository: CRAN
-Date/Publication: 2013-03-11 07:56:19
+Date/Publication: 2015-03-18 07:03:13

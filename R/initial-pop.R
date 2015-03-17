@@ -5,7 +5,7 @@
     n = length(lowerBoundsMatrix[1,]);
     NP = 10*numvars;
     resultado = matrix(0,NP,numvars);    
-    # Primero acumular los extremos izquierdos de cada fila
+    # Accumulate lower bound of every row
     acumExtrIzquierdos = rowSums(lowerBoundsMatrix);
     occupied = matrix(0,n,n); # First position of each row: number K of occupied elements (indicated in columns 2 to K+1)    
                               # Rest of the row: indices of columns of lowerBoundsMatrix or upperBoundsMatrix containing non-zero elements

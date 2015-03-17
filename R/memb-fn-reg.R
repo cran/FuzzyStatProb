@@ -259,28 +259,36 @@ if(getRversion() >= "2.15.1") utils::globalVariables(c("left","right","coefs"));
 
 ## _____________________________________________________________________________________________________________
 
-.membFnRegression<-function(miframeizq, miframeder, regressiontype, verbose=FALSE){
+.membFnRegression<-function(miframeizq, miframeder, regressiontype, linguistic, verbose=FALSE){
 
     # 4 points a1 <= a2 <= a3 <= a4 which define the Fuzzy Number
     a1 = miframeizq[1,1];
     a2 = miframeizq[length(miframeizq[,1]),1];
     a3 = a2;
     a4 = miframeder[1,1];
+    
+    if(linguistic){
+      a3 = miframeder[length(miframeder[,1]),1];
+    }
         
     names(miframeizq) = c("w","y"); # w = independent variable for regression to obtain left and right side membership functions
     names(miframeder) = c("w","y"); # y = dependent variable for regression
     
-    condizq = abs(miframeizq$w - a2) > 0.005;
-    condder = abs(miframeder$w - a2) > 0.005;
-    
-    miframeizq = miframeizq[condizq | condder,];
-    miframeder = miframeder[condizq | condder,];
+    if(!linguistic){    
+      condizq = abs(miframeizq$w - a2) > 0.005;
+      condder = abs(miframeder$w - a2) > 0.005;
+      
+      miframeizq = miframeizq[condizq | condder,];
+      miframeder = miframeder[condizq | condder,];
+    }
     
     coreLeftThreshold = miframeizq[length(miframeizq[,1]),1];
     coreRightThreshold = miframeder[length(miframeder[,1]),1];
     
-    miframeizq = rbind(miframeizq,c(a2,0.999));
-    miframeder = rbind(miframeder,c(a2,0.999));
+    if(!linguistic){
+      miframeizq = rbind(miframeizq,c(a2,0.999));
+      miframeder = rbind(miframeder,c(a2,0.999));
+    }
     
     fuzzy = NA;
 
