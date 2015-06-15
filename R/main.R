@@ -72,24 +72,25 @@
 ##' # ----------------- CREATE DATA ----------
 ##' # Simulate 200 observations of a 10-state Markov chain, 
 ##' # and compute fuzzy stationary probability of state 1
-##' library(markovchain) # for simulating from a known crisp Markov chain
-##' # Transition matrix taken from Fig. 1 of Amigoni et al. (see references)
-##' mcPatrol <- new("markovchain", states = robotStates, byrow = TRUE,
-##' transitionMatrix = transRobot, name = "Patrolling")
-##' set.seed(666)
-##' simulatedData <- rmarkovchain(n = 200, object = mcPatrol, t0 = 
+##' if(require("markovchain")){ # for simulating from a known crisp Markov chain
+##' 	# Transition matrix taken from Fig. 1 of Amigoni et al. (see references)
+##' 	mcPatrol <- new("markovchain", states = robotStates, byrow = TRUE,
+##' 	transitionMatrix = transRobot, name = "Patrolling")
+##' 	set.seed(666)
+##' 	simulatedData <- rmarkovchain(n = 200, object = mcPatrol, t0 = 
 ##'   sample(robotStates, 1))
-##' mcfit = markovchainFit(simulatedData) # Fit with markovchain package
-##' vsteady = steadyStates(mcfit$estimate) # 1 x n matrix of stat. probs
-##' # ---------------------------------------
-##' # Simplest case: compute only alpha-cuts for alpha=0.001 and alpha=0.999
-##' # Set itermax to 30 (too few) just for a fast example (not good results)
-##' linear = fuzzyStationaryProb(simulatedData,list(verbose=TRUE, states="01", 
-##'   regression="piecewise"), step=1, itermax = 30) 
-##' summary(linear)
-##' linear$fuzzyStatProb[["01"]]
-##' plot(linear$fuzzyStatProb[["01"]])
-##' points(linear$acuts[["01"]])
+##' 	mcfit = markovchainFit(simulatedData) # Fit with markovchain package
+##' 	vsteady = steadyStates(mcfit$estimate) # 1 x n matrix of stat. probs
+##' 	# ---------------------------------------
+##' 	# Simplest case: compute only alpha-cuts for alpha=0.001 and alpha=0.999
+##' 	# Set itermax to 30 (too few) just for a fast example (not good results)
+##' 	linear = fuzzyStationaryProb(simulatedData,list(verbose=TRUE, states="01", 
+##'   	regression="piecewise"), step=1, itermax = 30) 
+##' 	summary(linear)
+##' 	linear$fuzzyStatProb[["01"]]
+##' 	plot(linear$fuzzyStatProb[["01"]])
+##' 	points(linear$acuts[["01"]])
+##'	}
 ##' \dontrun{
 ##' # A more accurate approximation, with steps of 0.1 (takes much longer!)
 ##' # Run the previous code to create mcPatrol, vsteady and simlatedData

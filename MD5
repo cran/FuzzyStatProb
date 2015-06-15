@@ -1,12 +1,12 @@
-f7c82cc9b7eca9a0e56dd6c12e952765 *DESCRIPTION
+6394daa8d7d9a850844548d478083623 *DESCRIPTION
 bfe2b1cd142fddfa61cb0831710a391f *NAMESPACE
 8c09c38865700d8c1c850ed2c556ae54 *R/FuzzyStatProb-package.R
 a019ee98763fa2c9aaf28c4cfdc19280 *R/fuzzyStatObj.R
 10d021720c824d3cb5514a291bd70096 *R/initial-pop.R
-c2c8c1e39b995c56941f0cbce3204d29 *R/main.R
+3f592bdfe46991f9124a8176e923c0c6 *R/main.R
 4126c88194502c94e3e0e5b35aa65a79 *R/memb-fn-reg.R
 6b7336cf1e2aa78440a2c0ee709b34ae *R/objective-fn.R
-23fc24e270a19e789d3ceb6a1e9827c9 *build/vignette.rds
+e2fc3d0d7edcc915096f0a1f5c1544bf *build/vignette.rds
 6514223c9220a6239824cfe5c1f740a3 *data/robotMatrix.RData
 ed4231aadba88bfdf55154d7e96e2ae9 *inst/doc/FuzzyStatProb.pdf
 41970627318c28998b8071d5cb233302 *inst/doc/FuzzyStatProb.pdf.asis
