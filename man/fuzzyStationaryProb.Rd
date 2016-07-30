@@ -139,10 +139,14 @@ summary(linear)
 }
 }
 \references{
+Villacorta, P.J. and Verdegay, J.L. FuzzyStatProb: An R Package for the Estimation of Fuzzy 
+   Stationary Probabilities from a Sequence of Observations of an Unknown Markov Chain.
+   Journal of Statistical Software, 71(8), 1-27 (2016).       
+
 Buckley, J.J. Fuzzy Probabilities: New Approach and Applications, 2nd edition, volume
   115 of Studies in Fuzziness and Soft Computing. Springer, 2005.
 
-Glaz, J. and C.P. Sison. Simultaneous confidence intervals for multinomial proportions.
+Glaz, J. and C.P. Sison (1999). Simultaneous confidence intervals for multinomial proportions.
 Journal of Statistical Planning and Inference 82:251-262 (1999).
 
 May, W.L. and W.D. Johnson. Constructing two-sided simultaneous confidence intervals for
@@ -153,7 +157,7 @@ Gagolewski M. FuzzyNumbers Package: Tools to deal with fuzzy numbers in R (2012)
 Tutorial available at http://www.ibspan.waw.pl/~gagolews/FuzzyNumbers/doc/FuzzyNumbers-Tutorial.pdf
 
 Amigoni, F., Basilico, N., Gatti, N. Finding the Optimal Strategies for Robotic Patrolling
-with Adversaries in Topologically-Represented Eenvironments. In Proc. of ICRA 2009, pp. 819-824.
+with Adversaries in Topologically-Represented Eenvironments. In Proc. of ICRA, pp. 819-824 (2009).
 }
 \seealso{
 \code{\link[markovchain]{markovchainFit}}

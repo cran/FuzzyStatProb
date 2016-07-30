@@ -1,0 +1,23 @@
+bibentry(bibtype = "Article",
+  title        = "{FuzzyStatProb}: An {R} Package for the Estimation of Fuzzy Stationary Probabilities from a Sequence of Observations of an Unknown {M}arkov Chain",
+  author       = c(person(given = c("Pablo", "J."),
+                          family = "Villacorta",
+                          email = "pjvi@decsai.ugr.es"),
+                   person(given = c("Jos{\\'e}", "L."),
+                          family = "Verdegay",
+                          email = "verdegay@decsai.ugr.es")),
+  journal      = "Journal of Statistical Software",
+  year         = "2016",
+  volume       = "71",
+  number       = "8",
+  pages        = "1--27",
+  doi          = "10.18637/jss.v071.i08",
+
+  header       = "To cite FuzzyStatProb in publications use:",
+  textVersion  =
+  paste("Pablo J. Villacorta, Jose L. Verdegay (2016).",
+        "FuzzyStatProb: An R Package for the Estimation of Fuzzy Stationary Probabilities from a Sequence of Observations of an Unknown Markov Chain.",
+        "Journal of Statistical Software, 71(8), 1-27.",
+        "doi:10.18637/jss.v071.i08")
+)
+
