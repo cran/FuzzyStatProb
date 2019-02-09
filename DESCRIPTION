@@ -1,6 +1,6 @@
 Package: FuzzyStatProb
 License: LGPL (>= 3)
-Author: Author: Pablo J. Villacorta <pjvi@decsai.ugr.es>
+Author: Pablo J. Villacorta <pjvi@decsai.ugr.es>
 Maintainer: Pablo J. Villacorta <pjvi@decsai.ugr.es>
 URL: http://decsai.ugr.es/~pjvi/r-packages.html
 LazyData: true
@@ -10,13 +10,13 @@ Type: Package
 Description: An implementation of a method for computing fuzzy numbers representing stationary probabilities of an unknown Markov chain,
         from which a sequence of observations along time has been obtained. The algorithm is based on the proposal presented by James Buckley 
         in his book on Fuzzy probabilities (Springer, 2005), chapter 6. Package 'FuzzyNumbers' is used to represent the output probabilities.
-Version: 2.0.3
-Date: 2017-7-20
+Version: 2.0.4
+Date: 2019-2-9
 Imports: MultinomialCI, parallel, FuzzyNumbers, DEoptim
 Suggests: markovchain, R.rsp
 VignetteBuilder: R.rsp
 NeedsCompilation: no
-Packaged: 2017-07-21 18:28:14 UTC; AsusPC
+Packaged: 2019-02-09 17:14:42 UTC; AsusPC
 Repository: CRAN
-Date/Publication: 2017-07-21 22:53:53 UTC
+Date/Publication: 2019-02-09 17:33:13 UTC
 RoxygenNote: 6.0.1
